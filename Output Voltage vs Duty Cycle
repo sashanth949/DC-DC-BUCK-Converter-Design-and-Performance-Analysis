@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+duty_cycle=[0.50,0.52,0.54,0.56]
+vout_10ohm = [5.7171, 5.9262, 6.1336, 6.3400]
+vout_40ohm = [6.0916, 6.3172, 6.5418, 6.7676]
+plt.figure(figsize=(6, 4.5))
+plt.plot(duty_cycle, vout_10ohm, marker='o', color='#1f77b4', linewidth=1.5, label=r'10 $\Omega$ Heavy Load')
+plt.plot(duty_cycle, vout_40ohm, marker='s', color='#ff7f0e', linewidth=1.5, label=r'40 $\Omega$ Light Load')
+plt.xlabel('Duty Cycle ($D$)')
+plt.ylabel('Average Output Voltage ($V_{out}$ / V)')
+plt.xticks(duty_cycle)
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.legend(loc='lower right')
+plt.tight_layout()
+plt.show()
