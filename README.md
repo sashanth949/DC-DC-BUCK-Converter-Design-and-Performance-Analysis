@@ -1,0 +1,2 @@
+# DC-DC-BUCK-Converter-Design-and-Performance-Analysis
+DC-DC buck converters in EVs and industry face reliability issues from capacitor aging, inductor degradation, and diode faults. A simulation-based intelligent fault diagnosis using LT-SPICE monitors voltage, ripple, and current, builds fault/severity matrices, and explores PWM compensation, laying groundwork for FPGA/Verilog fault-tolerant control.
