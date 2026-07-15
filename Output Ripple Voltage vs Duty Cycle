@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+duty_cycle=[0.50,0.52,0.54,0.56]
+vripple_10ohm = [506.25, 502.85, 494.02, 475.01]
+vripple_40ohm=[593.018,584.503,554.573,544.576]
+plt.figure(figsize=(6, 4.5))
+plt.plot(duty_cycle, vripple_10ohm, marker='o', color='#1f77b4', linewidth=1.5, label=r'10 $\Omega$ Heavy Load')
+plt.plot(duty_cycle, vripple_40ohm, marker='s', color='#ff7f0e', linewidth=1.5, label=r'40 $\Omega$ Light Load')
+plt.xlabel('Duty Cycle ($D$)')
+plt.ylabel('Output Voltage Ripple ($V_{ripple}$ / mV)')
+plt.xticks(duty_cycle)
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.legend(loc='upper right')
+plt.tight_layout()
+plt.show()
